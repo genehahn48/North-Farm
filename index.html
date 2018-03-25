@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset=utf-8 />
+	<title>North Farm Fields</title>
+	<meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.css" />
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+	<style>
+		body {
+			margin: 0;
+			padding: 0;
+			background: #f5f5f5;
+			font-family: 'Open Sans', sans-serif;
+			color: #3d3d3d;
+		}
+
+		section {
+			/* width: 960px; */
+			width: 80%;
+			margin: 20px auto;
+		}
+
+		h1 {
+			font-family: 'Open Sans', sans-serif;
+			font-weight: bold;
+			letter-spacing: .04em;
+		}
+
+		h2 {
+			font-family: 'Open Sans', sans-serif;
+			letter-spacing: .04em;
+		}
+
+		p {
+			font-size: 1em;
+			line-height: 1.5em;
+		}
+
+		a {
+			color: #005daa;
+			text-decoration: none;
+		}
+
+		a:hover {
+			text-decoration: underline;
+		}
+
+		ul {
+			padding-left: 20px;
+		}
+
+		li {
+			margin: 10px 0
+		}
+
+		#map {
+			width: 100%;
+			margin: 10px auto;
+			border: 2px solid #d3d3d3;
+		}
+	</style>
+</head>
+
+<body>
+	<section>
+
+		<!-- This is an HTML comment. Find the comments below and follow the instructions. -->
+
+		<h1>University of Kentucky Plant and Soil Sciences Dept Fields</h1>
+
+		<div id='map'><iframe width="100%" height="520" frameborder="0" src="https://nmp.carto.com/u/genehahn/builder/6909fc47-b080-4447-a5cf-e312b08b1a1c/embed" allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+			<!-- Add your custom iframe here -->
+		</div>
+
+		<!-- Map comments. Wildfire pattern looks correct, but legend says percent but your values are ratios. I'd consider making the fire points appear a zoom levels higher. Currently they obscure the counties. Popups are good, though you could round the ratio (or percent?) to three or four digits. -->
+
+		<a href="https://nmp.carto.com/u/genehahn/builder/6909fc47-b080-4447-a5cf-e312b08b1a1c/embed">Enlarge map</a>
+		<!-- Add you information below -->
+		<h2>Authored by Gene Hahn in March 2018</h2>
+		<p>Interactive map showing field numbers for Plant and Soil Sciences Dept fields at North Farm in Lexington, KY. If hover above field boundary Principal Investigator (PI) name and field number displays. If you click within field boundary PI name, email,
+			phone name, and field number displayed. </p>
+		<h3>Data source and method</h3>
+		<p>Created with QGIS 2.18.16 and Catro online with data sourced from the University of Kentucky Lee Moser, Steve Higgins, Sarah Wigthman, and Sara Carter. The soils mapping units sourced from Soil Survey Staff, Natural Resources Conservation Service, United
+			States Department of Agriculture. Web Soil Survey. Available online at https://websoilsurvey.nrcs.usda.gov/. Accessed [03/25/2018].
+			<A href="https://websoilsurvey.nrcs.usda.gov/">https://websoilsurvey.nrcs.usda.gov/</a>
+		</p>
+		<ul>
+			<!-- Change the following contacts to your personal brand, whatever you want it to be! -->
+
+			<li>Visit my <a href='https://github.com/genehahn48'>GitHub projects</a>.</li>
+		</ul>
+	</section>
+
+</body>
+
+</html>
